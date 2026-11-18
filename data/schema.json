@@ -1,0 +1,80 @@
+{
+  "tables": {
+    "feed_lots": [
+      "lot",
+      "supplier",
+      "grade",
+      "in_kg",
+      "intake"
+    ],
+    "mix": [
+      "batch",
+      "line",
+      "processed",
+      "input",
+      "kg_min",
+      "kg_max"
+    ],
+    "retains": [
+      "sample",
+      "batch",
+      "grade",
+      "kind",
+      "sampled",
+      "retain_until",
+      "disposal"
+    ],
+    "assays": [
+      "read",
+      "sample",
+      "method",
+      "fraction",
+      "recorded",
+      "authorized"
+    ],
+    "shipments": [
+      "shipment",
+      "batch",
+      "outlet",
+      "separable"
+    ],
+    "holds": [
+      "decision",
+      "shipment",
+      "effective",
+      "state"
+    ]
+  },
+  "references": [
+    [
+      "mix",
+      "input",
+      "feed_lots",
+      "lot"
+    ],
+    [
+      "assays",
+      "sample",
+      "retains",
+      "sample"
+    ],
+    [
+      "shipments",
+      "batch",
+      "mix",
+      "batch"
+    ],
+    [
+      "retains",
+      "batch",
+      "mix",
+      "batch"
+    ],
+    [
+      "holds",
+      "shipment",
+      "shipments",
+      "shipment"
+    ]
+  ]
+}

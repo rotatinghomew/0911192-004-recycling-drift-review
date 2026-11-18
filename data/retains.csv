@@ -1,0 +1,9 @@
+sample,batch,grade,kind,sampled,retain_until,disposal
+s1,b1,A,random,2026-03-05,2026-04-01,
+s2,b2,B,random,2026-03-05,2026-03-10,2026-03-10
+s3,b3,A,random,2026-03-09,2026-04-10,
+s4,b4,B,random,2026-03-09,2026-04-10,
+s5,b5,A,random,2026-03-13,2026-04-13,
+s6,b6,B,random,2026-03-13,2026-04-13,
+s7,b6,B,targeted,2026-03-13,2026-04-13,
+s8,b5,A,random,2026-03-13,2026-04-13,

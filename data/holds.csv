@@ -1,0 +1,4 @@
+decision,shipment,effective,state
+d1,ship1,2026-03-13,hold
+d2,ship2,2026-03-13,hold
+d3,ship3,2026-03-13,released

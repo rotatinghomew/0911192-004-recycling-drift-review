@@ -1,0 +1,6 @@
+shipment,batch,outlet,separable
+ship1,b3,D1,yes
+ship1,b5,D1,yes
+ship2,b4,D2,no
+ship2,b6,D2,no
+ship3,b1,D3,yes
