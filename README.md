@@ -23,3 +23,14 @@ CSV 使用 UTF-8 和逗号分隔。值留空表示这条资料未给出该字段
 python3 inspect_inputs.py
 python3 -m unittest discover -s tests -v
 ```
+
+## 漂移追查报告
+
+`drift_report.py` 只读交接资料，把当班超限分到检测规程差异、线内变化、来料构成三类解释，
+给出留样复测计划与出货处置建议。上限按参考规程（old）口径解释；新规程读数须同一样本
+配对或在共同支持内换算后再比较。实际冻结/放行决定与留样销毁为既成事实，报告不重写。
+
+```sh
+python3 drift_report.py                      # 资料截至日期取数据中最晚活动日
+python3 drift_report.py --as-of 2026-03-13   # 查看某一日历日可用的资料状态
+```
